@@ -3,7 +3,7 @@ import ssl
 import smtplib
 
 email_sender = 'dhartwich650@gmail.com'
-email_passwrd = 'ccorattysbtcouxm'
+email_passwrd = 'Passw0rd'
 
 email_reciever = 'demonlazze7@gmail.com' , 'dnhartwich@gmail.com'
 
@@ -28,4 +28,3 @@ context = ssl.create_default_context()
 with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
     smtp.login(email_sender, email_passwrd)
     smtp.sendmail(email_sender,email_reciever,em.as_string())
-# app passw0rd ccorattysbtcouxm
